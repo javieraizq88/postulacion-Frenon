@@ -1,0 +1,54 @@
+
+body{
+  background-color: rgb(240, 240, 240) !important;
+}
+
+/* Sidenav */
+
+.sidenav {
+  height: 100%;
+  width: 70px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(110, 97, 231);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff8e;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidebar-calendario{
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+#sidebar-usuarios,
+#sidebar-informes{
+  margin-bottom: 10%;
+}
+
+
+/* dashboard */
+
+#dashboard{
+  height: 25%;
+}
+
+#dashboard .iconos a{
+  padding-left: 30px;
+  font-size: 200%;
+  color: grey;
+}
+
