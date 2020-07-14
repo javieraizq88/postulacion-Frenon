@@ -68,10 +68,69 @@ const Home = props => {
 
                             </div>
 
-                            <h3 id="h3-color2">Hoteles Disponibles</h3>
-                            <div className="card mb-4">
-                                hola
+                            <h3 id="hoteles-disponibles" className="mb-4 mt-2">Hoteles Disponibles</h3>
+                            <div className=" card-group ">
+                                <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
+                                    <img
+                                        className="card card-img"
+                                        id="card-hoteles2"
+                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="..." />
+                                    <div class="ml-2 pl-1 card-img-overlay" id="boton">
+                                        <h5 class="card-title">WANHARA HOTEL </h5>
+                                        <botton class="mt-5 btn btn-danger"> Reservar</botton>
+                                    </div>
+                                </div>
+
+                                <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
+                                    <img
+                                        className="card card-img"
+                                        id="card-hoteles2"
+                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="..." />
+                                    <div class="ml-2 pl-1 card-img-overlay" id="boton">
+                                        <h5 class="card-title">Card title</h5>
+                                        <botton class="mt-5 btn btn-danger"> Reservar</botton>
+                                    </div>
+                                </div>
+                                <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
+                                    <img
+                                        className="card card-img"
+                                        id="card-hoteles2"
+                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="..." />
+                                    <div class="ml-2 pl-1 card-img-overlay" id="boton">
+                                        <h5 class="card-title">Card title</h5>
+                                        <botton class="mt-5 btn btn-danger"> Reservar</botton>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div className="card-group justify-content-between">
+                                <div id="card-hoteles2" class="card-img col-md-6 mb-3 col-sm-10 col-xs-10">
+                                    <img
+                                        className="card card-img"
+                                        id="card-hoteles2"
+                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="..." />
+                                    <div class="ml-3 card-img-overlay" id="boton">
+                                        <h5 class="card-title">Card title</h5>
+                                        <botton class="mt-5 btn btn-secondary"> Reservar</botton>
+                                    </div>
+                                </div>
+                                <div id="card-hoteles2" class=" card-img col-md-6 mb-3 col-sm-10 col-xs-10">
+                                    <img
+                                    id="card-hoteles2"
+                                        className="card card-img"
+                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                                        alt="..." />
+                                    <div class="ml-3 card-img-overlay" id="boton">
+                                        <h5 class="card-title">Card title</h5>
+                                        <botton class="mt-5 btn btn-secondary"> Reservar</botton>
+                                    </div>
+                                </div>
+                            </div>
+
 
                         </div>
 
