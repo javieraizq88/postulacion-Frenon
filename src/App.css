@@ -52,3 +52,41 @@ body{
   color: grey;
 }
 
+#card-usuario{
+  background: linear-gradient(to right, rgba(120,100,218,0.53) 0%, rgba(148,189,244,1) 100%);
+  background-image: linear-gradient(to right, rgba(120, 100, 218, 0.53) 0%, rgb(148, 189, 244) 100%);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+hr{
+    height: 5px;
+    background-color: white;
+    box-sizing: content-box;
+    overflow: visible;
+    border-style: inset;
+    border-width: 1px;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.card {
+  border-radius: 4px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  box-shadow: 2px 2px 5px #999;
+}
+
+#iconos-notificaciones{
+  font-size: 25px;
+  color: #999;
+}
+
+#nombre-mensaje{
+  color: grey;
+}
