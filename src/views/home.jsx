@@ -5,8 +5,8 @@ const Home = props => {
         <>
 
 
-            <div  className="bg-dark">
-                <div id="home"   className="container bg-danger">
+            <div className="">
+                <div id="home" className="container ">
 
                     {/* container superior dashboard */}
                     <div className=" col-md-12">
@@ -68,6 +68,7 @@ const Home = props => {
 
                             </div>
 
+                            <h3 id="h3-color2">Hoteles Disponibles</h3>
                             <div className="card mb-4">
                                 hola
                             </div>
@@ -77,14 +78,14 @@ const Home = props => {
                         {/* container derecha */}
                         <div className="col-md-4 col-sm-12 ">
                             <div className="card bg-white">
-                                <h3 className="mt-2 pl-4 pr-4">Notificaciones</h3>
+                                <h4 className="mt-2 pl-4 pr-4">Notificaciones</h4>
                                 <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
                                     <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
                                         <i class="far fa-envelope"></i>
                                         <p className="mr-2">2-Abr</p>
                                     </div>
-                                    <h4 id="nombre-mensaje" className="ml-2">Juan Perez</h4>
-                                    <p id="nombre-mensaje" className="ml-2 mt-2">It is a long established fact that a reader will</p>
+                                    <h5 id="nombre-mensaje" className="ml-2">Juan Perez</h5>
+                                    <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">It is a long established fact that a reader will</p>
                                 </div>
 
                                 <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
@@ -128,7 +129,6 @@ const Home = props => {
                     </div>
 
 
-                    <h1>Home</h1>
                 </div>
             </div>
         </>
