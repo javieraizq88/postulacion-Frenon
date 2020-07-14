@@ -40,6 +40,13 @@ body{
 }
 
 
+/* Home */
+
+#home{
+  margin-left: 8%;
+zoom: 1.21;
+}
+
 /* dashboard */
 
 #dashboard{
@@ -60,6 +67,7 @@ body{
   font-size: 18px;
   box-sizing: border-box;
 }
+
 hr{
     height: 5px;
     background-color: white;
@@ -89,4 +97,45 @@ hr{
 
 #nombre-mensaje{
   color: grey;
+}
+
+#dibujo-card-mitad-izq{
+  font-size: 35px;
+  color: #999;
+  padding: 0;
+}
+
+#notificaciones {
+  border-bottom: blue 1px solid;
+  margin-left: 20px;
+}
+
+#notificaciones p,
+#hoteles p,
+#pagos p{
+  padding-left: 30px;
+}
+
+#hoteles,
+#pagos {
+    border-bottom: blue 1px solid;
+}
+
+
+
+@media (max-width:720px){
+
+  .sidenav{
+    zoom: 0.5;
+  }
+
+  #home{
+      zoom: 0.5;
+  }
+
+  #container-izq{
+    justify-content: none;
+    display: none;
+  }
+
 }
