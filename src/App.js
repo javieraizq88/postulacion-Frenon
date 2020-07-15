@@ -5,7 +5,6 @@ import injectContext from './store/appContext';
 import Home from './views/home';
 import Sidebar from './component/sidenav';
 import Notificaciones from './component/notificaciones';
-import Buscar from './component/buscar';
 import Resultados from './component/resultados';
 
 const App = props => {
