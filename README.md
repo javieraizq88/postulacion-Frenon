@@ -18,7 +18,16 @@ Para ejecutar el programa se deben ejecutar los siguientes instrucciones:
 
 
 La arquitectura:
-- comienza con un home que muestra el nombre de usuario, los hoteles disponibles segun la base de datos importada. Tiene un boton que despliega un modal con la información del hotel seleccionado, foto, ubicación.
-- a mano derecha del home se muestran las notificaciones pendientes con un mensaje corto y al hacer click en "leer" se redirecciona a la pagina de las notificaciones que muestra los mensajes completos segun id del mensaje.
-- el dashboard tiene activado el icono de mensaje para poder leerlos todos.
--el sidebar tiene activado el icono de home para volver desde notificaciones
+- HOME muestra el nombre de usuario según name del state. Abajo, muestra los hoteles disponibles segun la base de datos importada. 
+- Cada card de cada hotel tiene un boton que despliega un modal con la información del hotel, foto y ubicación.
+- a mano derecha del home se muestran las notificaciones: fecha de entrega, nombre de quién lo envía, mensaje corto y al hacer click en "leer" se redirecciona a la pagina de las notificaciones que muestra los mensajes completos segun id del mensaje.
+- el dashboard tiene activado el icono de mensaje para poder leerlos y el de buscar para buscar hoteles.
+- en el componente de buscar, solo se necesita escribir el hotel que busca y se filtrarán los resultados
+- el sidebar tiene activado el icono de home para volver.
+
+Lenguajes y tecnologías utilizadas:
+- React.Js
+- HTML 
+- CSS
+- JQuery
+- Bootstrap

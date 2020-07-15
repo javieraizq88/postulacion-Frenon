@@ -37,7 +37,8 @@ const Modal = props => {
                                         </button>
                                     </div>
                                     <div className="modal-body">
-                                        <p><strong>Ubicación</strong> {hotel1.hotel_city}</p>
+                                        <h5><strong>Ubicación</strong> {hotel1.hotel_city}</h5>
+                                        <br/>
                                         <img
                                             id="img-modal"
                                             src={hotel1.imagen}
@@ -45,7 +46,6 @@ const Modal = props => {
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
                             </div>

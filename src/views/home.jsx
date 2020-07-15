@@ -103,7 +103,7 @@ const Home = props => {
                                                  <i class="far fa-envelope"></i>
                                                 <p className="mr-2">{mensaje.fecha}</p>
                                             </div>
-                                            <h5 id="nombre-mensaje" className="ml-2">{mensaje.nombre}</h5>
+                                            <h5 id="nombre-mensaje" className="ml-2">{mensaje.hotel}</h5>
                                             <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">{mensaje.mensaje_corto}</p>
                                             <Link to="/notificaciones:mensaje"> <button className="mb-3 btn btn-primary">Leer</button></Link>
 
