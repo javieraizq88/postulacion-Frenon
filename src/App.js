@@ -4,8 +4,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import injectContext from './store/appContext';
 import Home from './views/home';
 import Sidebar from './component/sidenav';
-import Notificaciones from './component/notificaciones';
-import Resultados from './component/resultados';
+import Notificaciones from './views/notificaciones';
+import Resultados from './views/resultados';
 
 const App = props => {
   return (

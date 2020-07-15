@@ -1,8 +1,8 @@
 import React from "react"
-import datamsg from "./datamsg.js"
+import datamsg from "../component/datamsg.js"
 import { useContext } from "react"
 import { Context } from "../store/appContext.js"
-import Dashboard from "./dashboard.jsx"
+import Dashboard from "../component/dashboard.jsx"
 
 
 const Notificaciones = props => {

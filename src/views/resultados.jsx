@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import { useContext } from "react"
 import { Context } from "../store/appContext"
-import Dashboard from "./dashboard"
-import data from "./data.js"
+import Dashboard from "../component/dashboard"
+import data from "../component/data.js"
 
 
 const Resultados = props => {
