@@ -18,6 +18,8 @@ Para ejecutar el programa se deben ejecutar los siguientes instrucciones:
 
 
 La arquitectura:
+- aplicación responsiva puede visualizarse en grandes pantallas, tablet y celulares
+- Cree un javascript para almacenar la información la base de datos. Una para los hoteles (data.js) y otra para las notificaciones (datamsg.js)
 - HOME muestra el nombre de usuario según name del state. Abajo, muestra los hoteles disponibles segun la base de datos importada. 
 - Cada card de cada hotel tiene un boton que despliega un modal con la información del hotel, foto y ubicación.
 - a mano derecha del home se muestran las notificaciones: fecha de entrega, nombre de quién lo envía, mensaje corto y al hacer click en "leer" se redirecciona a la pagina de las notificaciones que muestra los mensajes completos segun id del mensaje.
