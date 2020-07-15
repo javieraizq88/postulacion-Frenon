@@ -7,7 +7,7 @@ const Sidebar = props => {
             <a id="sidebar-home" href="/">
                 <i class="fas fa-home"></i>
             </a>
-            <a id="sidebar-calendario" href="/calendario">
+            <a id="sidebar-calendario" href="#">
                 <i class="fas fa-calendar-alt"></i>
             </a>
             <a id="sidebar-usuarios" href="#">

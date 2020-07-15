@@ -1,6 +1,23 @@
-import React from "react"
+import React, { useContext, useState } from "react"
+import { Context } from "../store/appContext"
+import data from "../component/data.js"
+import { useEffect } from "react"
+import Modal from "../component/modal"
+import datamsg from "../component/datamsg"
+import { Link } from "react-router-dom"
+import Dashboard from "../component/dashboard"
 
 const Home = props => {
+    const { store, actions } = useContext(Context)
+
+
+    useEffect(() => {
+        fetch('./db.json')
+            .then(response => response.json())
+            .then(data => this.setState({ data: data }));
+    }, [])
+
+
     return (
         <>
 
@@ -9,36 +26,14 @@ const Home = props => {
                 <div id="home" className="container ">
 
                     {/* container superior dashboard */}
-                    <div className=" col-md-12">
-                        <div id="dashboard" className=" mb-4 card">
-                            <div className="card-body">
-                                <div className="mt-4 mb-4 cardSupIzq d-flex justify-content-between">
-                                    <h4>Dashboard</h4>
-                                    <div className="iconos">
-                                        <a className="" href="#">
-                                            <i class="fas fa-search"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="far fa-envelope"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-cog"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fas fa-chart-bar"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<Dashboard />
 
                     <div id="container-izq" className=" d-flex justify-content-between">
                         {/* container izquierda */}
                         <div className="col-md-8 col-sm-12">
                             <div id="card-usuario" className="card mb-4 card-body">
                                 <h4 className="mt-2">Bienvenido</h4>
-                                <h3 className="mt-4">David Anderson</h3>
+                                <h3 className="mt-4">{store.name}</h3>
                                 <hr />
                                 <h5 className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et nihil dolores porro a in, eaque laudantium temporibus fuga molestias.</h5>
                             </div>
@@ -70,67 +65,29 @@ const Home = props => {
 
                             <h3 id="hoteles-disponibles" className="mb-4 mt-2">Hoteles Disponibles</h3>
                             <div className=" card-group ">
-                                <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
-                                    <img
-                                        className="card card-img"
-                                        id="card-hoteles2"
-                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                                        alt="..." />
-                                    <div class="ml-2 pl-1 card-img-overlay" id="boton">
-                                        <h5 class="card-title">WANHARA HOTEL </h5>
-                                        <botton class="mt-5 btn btn-danger"> Reservar</botton>
-                                    </div>
-                                </div>
+                                {data.map(hotel => {
+                                    return (
 
-                                <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
-                                    <img
-                                        className="card card-img"
-                                        id="card-hoteles2"
-                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                                        alt="..." />
-                                    <div class="ml-2 pl-1 card-img-overlay" id="boton">
-                                        <h5 class="card-title">Card title</h5>
-                                        <botton class="mt-5 btn btn-danger"> Reservar</botton>
-                                    </div>
-                                </div>
-                                <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
-                                    <img
-                                        className="card card-img"
-                                        id="card-hoteles2"
-                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                                        alt="..." />
-                                    <div class="ml-2 pl-1 card-img-overlay" id="boton">
-                                        <h5 class="card-title">Card title</h5>
-                                        <botton class="mt-5 btn btn-danger"> Reservar</botton>
-                                    </div>
-                                </div>
-                            </div>
+                                        <div class=" card-img col-md-4 mb-3 col-sm-10 col-xs-10">
+                                            <img
+                                                className="card card-img"
+                                                id="card-hoteles2"
+                                                src={hotel.imagen}
+                                                alt="..." />
+                                            <div class="ml-2 pl-1 card-img-overlay" id="boton">
+                                                {/* Boton Modal */}
+                                                <div id="modal">
+                                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                                                        Reservar
+                                                    </button>
+                                                </div>
+                                                <h5 class="mt-4 card-title">{hotel.hotel_name} </h5>
+                                            </div>
+                                        </div> /* fin del card */
+                                    )
+                                })}
 
-                            <div className="card-group justify-content-between">
-                                <div id="card-hoteles2" class="card-img col-md-6 mb-3 col-sm-10 col-xs-10">
-                                    <img
-                                        className="card card-img"
-                                        id="card-hoteles2"
-                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                                        alt="..." />
-                                    <div class="ml-3 card-img-overlay" id="boton">
-                                        <h5 class="card-title">Card title</h5>
-                                        <botton class="mt-5 btn btn-secondary"> Reservar</botton>
-                                    </div>
-                                </div>
-                                <div id="card-hoteles2" class=" card-img col-md-6 mb-3 col-sm-10 col-xs-10">
-                                    <img
-                                    id="card-hoteles2"
-                                        className="card card-img"
-                                        src="https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
-                                        alt="..." />
-                                    <div class="ml-3 card-img-overlay" id="boton">
-                                        <h5 class="card-title">Card title</h5>
-                                        <botton class="mt-5 btn btn-secondary"> Reservar</botton>
-                                    </div>
-                                </div>
-                            </div>
-
+                            </div> {/* fin del mapeo */}
 
                         </div>
 
@@ -138,50 +95,23 @@ const Home = props => {
                         <div className="col-md-4 col-sm-12 ">
                             <div className="card bg-white">
                                 <h4 className="mt-2 pl-4 pr-4">Notificaciones</h4>
-                                <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                    <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
-                                        <i class="far fa-envelope"></i>
-                                        <p className="mr-2">2-Abr</p>
-                                    </div>
-                                    <h5 id="nombre-mensaje" className="ml-2">Juan Perez</h5>
-                                    <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">It is a long established fact that a reader will</p>
-                                </div>
+                                {datamsg.map(mensaje => {
+                                    return (
 
-                                <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                    <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
-                                        <i class="far fa-envelope"></i>
-                                        <p className="mr-2">2-Abr</p>
-                                    </div>
-                                    <h4 id="nombre-mensaje" className="ml-2">Juan Perez</h4>
-                                    <p id="nombre-mensaje" className="ml-2 mt-2">It is a long established fact that a reader will</p>
-                                </div>
+                                        <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
+                                            <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
+                                                 <i class="far fa-envelope"></i>
+                                                <p className="mr-2">{mensaje.fecha}</p>
+                                            </div>
+                                            <h5 id="nombre-mensaje" className="ml-2">{mensaje.nombre}</h5>
+                                            <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">{mensaje.mensaje_corto}</p>
+                                            <Link to="/notificaciones:mensaje"> <button className="mb-3 btn btn-primary">Leer</button></Link>
 
-                                <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                    <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
-                                        <i class="far fa-envelope"></i>
-                                        <p className="mr-2">2-Abr</p>
-                                    </div>
-                                    <h4 id="nombre-mensaje" className="ml-2">Juan Perez</h4>
-                                    <p id="nombre-mensaje" className="ml-2 mt-2">It is a long established fact that a reader will</p>
-                                </div>
+                                        </div>
+                                    )
+                                })}
 
-                                <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                    <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
-                                        <i class="far fa-envelope"></i>
-                                        <p className="mr-2">2-Abr</p>
-                                    </div>
-                                    <h4 id="nombre-mensaje" className="ml-2">Juan Perez</h4>
-                                    <p id="nombre-mensaje" className="ml-2 mt-2">It is a long established fact that a reader will</p>
-                                </div>
 
-                                <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                    <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
-                                        <i class="far fa-envelope"></i>
-                                        <p className="mr-2">2-Abr</p>
-                                    </div>
-                                    <h4 id="nombre-mensaje" className="ml-2">Juan Perez</h4>
-                                    <p id="nombre-mensaje" className="ml-2 mt-2">It is a long established fact that a reader will</p>
-                                </div>
                             </div>
                         </div>
 
@@ -190,6 +120,11 @@ const Home = props => {
 
                 </div>
             </div>
+
+            <Modal />
+
+
+
         </>
     )
 }

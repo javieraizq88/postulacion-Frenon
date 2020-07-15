@@ -1,0 +1,92 @@
+
+
+{
+    "email": "morning@hotmail.com",
+    "gender": "female",
+    "id": "lonesome-wind",
+    "last_login": {
+      "date_time": "Thu Aug  7 04:20:37 UTC 1969",
+      "ip4": "165.227.124.127"
+    },
+    "hotels": [
+        {
+            "hotel_id": 1,
+            "hotel_name": "The Singular Patagonia",
+            "hotel_city": "Puerto Natales"
+        },
+        {
+            "hotel_id": 2,
+            "hotel_name": "Alto Atacama Desert Lodge & Spa",
+            "hotel_city": "San Pedro de Atacama"
+        },
+        {
+            "hotel_id": 3,
+            "hotel_name": "Hotel Bidasoa",
+            "hotel_city": "Santiago"
+        },
+        {
+            "hotel_id": 4,
+            "hotel_name": "explora Atacama",
+            "hotel_city": "San Pedro de Atacama"
+        },
+        {
+            "hotel_id": 5,
+            "hotel_name": "Cabaña del Lago Hotel",
+            "hotel_city": "Puerto Varas"
+        },
+        {
+            "hotel_id": 6,
+            "hotel_name": "Sheraton Miramar Hotel & Convention Center",
+            "hotel_city": "Viña del Mar"
+        },
+        {
+            "hotel_id": 7,
+            "hotel_name": "Radisson Hotel Puerto Varas",
+            "hotel_city": "Puerto Varas"
+        },
+        {
+            "hotel_id": 8,
+            "hotel_name": "Valle Corralco Hotel & Spa ",
+            "hotel_city": "Malleco"
+        },
+        {
+            "hotel_id": 10,
+            "hotel_name": "Grand Hyatt Santiago",
+            "hotel_city": "Santiago"
+        },
+        {
+            "hotel_id": 11,
+            "hotel_name": "Hotel Cumbres Puerto Varas",
+            "hotel_city": "Puerto Varas"
+        },
+        {
+            "hotel_id": 12,
+            "hotel_name": "Tierra Patagonia Hotel & Spa",
+            "hotel_city": "Parque Nacional Torres del Paine"
+        },
+        {
+            "hotel_id": 13,
+            "hotel_name": "Renaissance Santiago Hotel",
+            "hotel_city": "Santiago"
+        },
+        {
+            "hotel_id": 14,
+            "hotel_name": "Le Rêve Boutique Hotel",
+            "hotel_city": "Santiago"
+        },
+        {
+            "hotel_id": 15,
+            "hotel_name": "explora Rapa Nui",
+            "hotel_city": "Rapa Nui"
+        },
+        {
+            "hotel_id": 16,
+            "hotel_name": "Tierra Atacama Hotel & Spa",
+            "hotel_city": "San Pedro de Atacama"
+        }
+
+
+
+    ]
+
+}
