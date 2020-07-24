@@ -26,16 +26,19 @@ const Home = props => {
                 <div id="home" className="container ">
 
                     {/* container superior dashboard */}
-<Dashboard />
+                    <Dashboard />
 
                     <div id="container-izq" className=" d-flex justify-content-between">
                         {/* container izquierda */}
                         <div className="col-md-8 col-sm-12">
                             <div id="card-usuario" className="card mb-4 card-body">
                                 <h4 className="mt-2">Bienvenido</h4>
-                                <h3 className="mt-4">{store.name}</h3>
+                                <h3 className="mt-4">
+                                    {store.name}
+                                </h3>
                                 <hr />
-                                <h5 className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et nihil dolores porro a in, eaque laudantium temporibus fuga molestias.</h5>
+                                <h5 className="mb-4">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et nihil dolores porro a in, eaque laudantium temporibus fuga molestias.</h5>
                             </div>
 
                             <div className="col-sm-12 card mb-4 justify-content-between">
@@ -63,7 +66,10 @@ const Home = props => {
 
                             </div>
 
-                            <h3 id="hoteles-disponibles" className="mb-4 mt-2">Hoteles Disponibles</h3>
+                            <h3 id="hoteles-disponibles"
+                                className="mb-4 mt-2">
+                                Hoteles Disponibles
+                            </h3>
                             <div className=" card-group ">
                                 {data.map(hotel => {
                                     return (
@@ -77,7 +83,11 @@ const Home = props => {
                                             <div class="ml-2 pl-1 card-img-overlay" id="boton">
                                                 {/* Boton Modal */}
                                                 <div id="modal">
-                                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-danger"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal">
                                                         Reservar
                                                     </button>
                                                 </div>
@@ -99,13 +109,25 @@ const Home = props => {
                                     return (
 
                                         <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                            <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
-                                                 <i class="far fa-envelope"></i>
+                                            <div
+                                                id="iconos-notificaciones"
+                                                className=" mt-2 ml-2 d-flex justify-content-between">
+                                                <i class="far fa-envelope"></i>
                                                 <p className="mr-2">{mensaje.fecha}</p>
                                             </div>
-                                            <h5 id="nombre-mensaje" className="ml-2">{mensaje.hotel}</h5>
-                                            <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">{mensaje.mensaje_corto}</p>
-                                            <Link to="/notificaciones:mensaje"> <button className="mb-3 btn btn-primary">Leer</button></Link>
+                                            <h5 id="nombre-mensaje"
+                                                className="ml-2">
+                                                {mensaje.hotel}
+                                            </h5>
+                                            <p id="nombre-mensaje"
+                                                className="ml-2 mt-2 pb-2">
+                                                {mensaje.mensaje_corto}
+                                            </p>
+                                            <Link to="/notificaciones:mensaje">
+                                                <button className="mb-3 btn btn-primary">
+                                                    Leer
+                                                </button>
+                                            </Link>
 
                                         </div>
                                     )
@@ -122,9 +144,6 @@ const Home = props => {
             </div>
 
             <Modal />
-
-
-
         </>
     )
 }
