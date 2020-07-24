@@ -23,7 +23,7 @@ const Resultados = props => {
                     <div className=" mb-4 card">
                         <div className="card-body">
                             <div className="col">
-                                <h2>Escribe el Hotel que buscas</h2>
+                                <h2>Escriba el Hotel que busca</h2>
                                 <input
                                     label="Buscar Hotel"
                                     value={store.buscarHotel}
@@ -64,16 +64,12 @@ const Resultados = props => {
                                             </div>
                                         </div> /* fin del card */
                                     )
-                                })}
-
-
-
+                                })
+                            }
 
                         </div>
                     </div>
                 </div>
-
-
 
             </div>
         </div>
