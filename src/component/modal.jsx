@@ -27,7 +27,8 @@ const Modal = props => {
                                     <div class="modal-header">
                                         <h3 class="modal-title"
                                             id="exampleModalLabel">
-                                            {hotel1.hotel_name}</h3>
+                                            {hotel1.hotel_name}
+                                        </h3>
                                         <button
                                             type="button"
                                             class="close"
@@ -37,15 +38,25 @@ const Modal = props => {
                                         </button>
                                     </div>
                                     <div className="modal-body">
-                                        <h5><strong>Ubicación</strong> {hotel1.hotel_city}</h5>
-                                        <br/>
+                                        <h5>
+                                            <strong>Ubicación</strong>
+                                            {hotel1.hotel_city}
+                                        </h5>
+
+                                        <br />
+
                                         <img
                                             id="img-modal"
                                             src={hotel1.imagen}
                                             alt="..." />
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary"
+                                            data-dismiss="modal">
+                                            Close
+                                        </button>
                                     </div>
                                 </div>
                             </div>
