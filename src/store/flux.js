@@ -3,10 +3,9 @@ const getState = ({ getStore, getActions, setStore }) => {
         store: {
             name: "Juan Perez",
             buscarHotel: "",
-
         },
-        actions: {
 
+        actions: {
             handleChange: e => {
                 setStore({
                     [e.target.name]: e.target.value
@@ -20,9 +19,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                         isAuthenticated: sessionStorage.getItem('isAuthenticated')
                     })
                 }
-            },
-
-
+            }
 
         }
     }
