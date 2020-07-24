@@ -26,14 +26,36 @@ const Notificaciones = props => {
                                     return (
 
                                         <div className="card mb-2 mr-3 ml-3 mt-3 pl-4 pr-4">
-                                            <div id="iconos-notificaciones" className=" mt-2 ml-2 d-flex justify-content-between">
+                                            <div id="iconos-notificaciones"
+                                                className=" mt-2 ml-2 d-flex justify-content-between">
                                                 <i class="far fa-envelope"></i>
-                                                <p className="mr-2">{mensaje.fecha}</p>
+                                                <p className="mr-2">
+                                                    {mensaje.fecha
+                                                    }</p>
                                             </div>
-                                            <h5 id="nombre-mensaje" className="ml-2"><strong></strong> {mensaje.hotel}</h5>
-                                            <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">Estimado/a {store.name} </p>
-                                            <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">Usted tiene una reserva pendiente en {mensaje.hotel} de {mensaje.ubicacion} la cuál consta de {mensaje.habitacion} para {mensaje.personas} personas {mensaje.tiempo} </p>
-                                            <p id="nombre-mensaje" className="ml-2 mt-2 pb-2">Saludos Cordiales </p>
+                                            <h5
+                                                id="nombre-mensaje"
+                                                className="ml-2">
+                                                {mensaje.hotel}
+                                            </h5>
+                                            <p
+                                                id="nombre-mensaje"
+                                                className="ml-2 mt-2 pb-2">
+                                                Estimado/a {store.name}
+                                            </p>
+                                            <p
+                                                id="nombre-mensaje"
+                                                className="ml-2 mt-2 pb-2">
+                                                Usted tiene una reserva pendiente en {mensaje.hotel}
+                                                de {mensaje.ubicacion}
+                                                la cuál consta de {mensaje.habitacion}
+                                                para {mensaje.personas} personas {mensaje.tiempo}
+                                            </p>
+                                            <p
+                                                id="nombre-mensaje"
+                                                className="ml-2 mt-2 pb-2">
+                                                    Saludos Cordiales
+                                            </p>
 
 
                                         </div>
@@ -42,7 +64,7 @@ const Notificaciones = props => {
 
                             </div>
                         </div>
-                    </div>   
+                    </div>
 
 
                 </div>
